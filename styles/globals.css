@@ -1,21 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.quotationsdivstyle {
+  @apply bg-[#EFF7FD]  rounded-lg;
+}
+.quotationsinputstyle {
+  @apply text-sm font-medium max-w-[205px] w-full bg-[#EFF7FD] focus:outline-none;
+}
+.quotationmaindivstyle {
+  @apply max-w-none md:max-w-[250px] xl:max-w-[321px] w-full flex flex-col gap-[10px] lg:gap-[20px] px-1 lg:px-2 xl:px-3;
 }
